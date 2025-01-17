@@ -17,3 +17,8 @@ Introduction to Git and GitHub for version control.
 Emphasized best practices for committing code and managing branches.
 4. Development Environment
 Configuration of local development environments to ensure consistency across team members.
+milstone 5 created signup page.
+- The **Sign-Up page** is where users can create an account by entering their name, email, and password.
+- **Form validation** checks that the data users enter is correct, like ensuring the email is in the right format and the password is strong enough.
+- In Milestone 5, you’ll design the sign-up form, add validation to make sure the data is accurate, and ensure a smooth user experience.
+- Once you’re done, push your code to GitHub, update the README with your progress, and share the repository link for submission.
