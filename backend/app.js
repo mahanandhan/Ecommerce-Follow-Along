@@ -1,19 +1,27 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const ErrorHandler = require('./utils/ErrorHandler');
+const ErrorHandler = require("./middleware/error");
+const cookieParser = require("cookie-parser");
+const bodyParser = require("body-parser");
 
-if(process.env.NODE_ENV !== 'PRODUCTION'){
-    require("dotenv").config({
-        path: "backend/config/.env"
-    })
+app.use(express.json());
+app.use(cookieParser());
+app.use("/", express.static("uploads"));
+app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
+
+// Config
+if (process.env.NODE_ENV !== "PRODUCTION") {
+  require("dotenv").config({
+    path: "backend/config/.env",
+  });
 }
-app.use((err, req, res, next) => {
-    if (err instanceof ErrorHandler){
-        return res.status(err.statusCode || 500).json({
-            message: err.message,
-            stack: err.stack
-        });
-    }
-    res.status(500).json({message: "Internal Server Error"});
-})
-module.exports=app;
+
+// Import Routes
+const user = require("./controller/user");
+
+app.use("/api/v2/user", user);
+
+// Error Handling
+app.use(ErrorHandler);
+
+module.exports = app;

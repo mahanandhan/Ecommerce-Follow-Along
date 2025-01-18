@@ -22,3 +22,16 @@ milstone 5 created signup page.
 - **Form validation** checks that the data users enter is correct, like ensuring the email is in the right format and the password is strong enough.
 - In Milestone 5, you’ll design the sign-up form, add validation to make sure the data is accurate, and ensure a smooth user experience.
 - Once you’re done, push your code to GitHub, update the README with your progress, and share the repository link for submission.
+
+milestone 4:-
+User Model:
+
+A User Model defines the structure of user data in the database using MongoDB schemas (e.g., name, email, password, and other fields). It acts as a blueprint for how data is stored and validated.
+User Controller:
+
+A User Controller manages user-related operations, such as handling user sign-up, login, and other requests. It interacts with the User Model to perform actions like creating, fetching, or updating user data.
+File Uploads with Multer:
+
+Multer is used to handle file uploads (e.g., profile pictures) in your backend. It stores files and tracks them on the server, making it easy to manage user-uploaded content.
+
+
