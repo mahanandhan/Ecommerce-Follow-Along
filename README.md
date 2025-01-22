@@ -35,3 +35,22 @@ File Uploads with Multer:
 Multer is used to handle file uploads (e.g., profile pictures) in your backend. It stores files and tracks them on the server, making it easy to manage user-uploaded content.
 
 
+milestone 6:-
+1. Encrypt the Password:
+Use bcrypt to hash the user’s password during the signup process.
+Make sure you never save the plain text password in the database, only the hashed version.
+2. Store Complete User Data:
+Ensure you’re saving all relevant user information (like name, email, etc.) to the database.
+While saving, make sure the password is always encrypted (hashed with bcrypt) and never stored as plain text.
+3. Missed the Mentor-Led Session?:
+No worries if you couldn’t attend the live coding session! You can always refer to the content and work through the steps.
+If you get stuck on the coding aspect, feel free to reach out to your mentor for guidance.
+Once you’ve completed these steps:
+1. Push Your Code:
+Push your updated code to the same GitHub repository you used for the previous milestones.
+2. Make Your Repository Public:
+Ensure your repository is publicly accessible so that your mentor can review it.
+3. Update Your README:
+Add a new section in your README to summarize the progress you've made for Milestone 6.
+4. Share the Link:
+Once everything is updated, share the repository link in the assignment submission section provided.

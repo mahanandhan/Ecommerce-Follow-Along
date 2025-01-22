@@ -1,5 +1,5 @@
 import React from 'react'
-import Login from "../components/auth/Login";
+import Login from "../components/auth/Login"
 function LoginPage() {
   return (
     <div>
@@ -7,6 +7,5 @@ function LoginPage() {
     </div>
   )
 }
-
 
 export default LoginPage;

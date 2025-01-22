@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { React, useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { RxAvatar } from "react-icons/rx";
@@ -11,7 +11,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const [visible, setVisible] = useState(false);
   const [avatar, setAvatar] = useState(null);
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState({}); 
 
   const handleFileSubmit = (e) => {
     const file = e.target.files[0];
@@ -56,16 +56,14 @@ const Signup = () => {
       },
     };
 
-    // Axios request
-    axios
-      .post("http://localhost:8000/api/v2/user/create-user", newForm, config)
-      .then((res) => {
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+
+//axios request
+    axios.post("http://localhost:8000/api/v2/user/create-user", newForm, config).then((res)=>{
+      console.log(res.data);
+    }).catch((err)=>{
+      console.log(err);
+    })
+};
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
