@@ -165,3 +165,30 @@ Add a new section to your README that summarizes the work you’ve done for Mile
 Share the Repository Link:
 
 After completing the steps, share your repository link in the assignment submission section.
+
+Milestone 9: Creating a Product Form 🌟
+Learning Goals 🎯
+By the end of this milestone, you'll:
+
+Create a form to input product details.
+Learn how to take multiple images as input for the product.
+Why Create a Product Form?
+We need this form to collect all the details of a product.
+The data from this form will eventually be saved in the database and displayed on the products page you worked on in the previous milestone.
+Steps for Milestone 9 📝
+Create the Product Form:
+Build a form that takes product details like name, description, price, and other necessary fields.
+Allow Multiple Product Images:
+Implement an option for users to upload multiple images for a product.
+Note:
+This milestone helps you understand the basics of creating product entries.
+Bonus Ideas:
+You could add more features like admin access (only admins can upload products).
+Consider adding shop profiles so only users with a "shop" profile can upload products.
+Submission Guidelines 📥
+Push your code to your GitHub repository.
+Make sure the repository is public.
+Update the README file to summarize your progress for Milestone 9.
+Share the repository link in the assignment submission section.
+Next Steps 🚀
+In the next milestone, you’ll enhance product cards with features like filtering and sorting. Stay focused and keep experimenting!
